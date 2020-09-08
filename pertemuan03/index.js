@@ -12,3 +12,9 @@ console.log(age);
 console.log(isMarried);
 
 console.log("my name is " +  firstname +", i'm " + age  +" years old");
+
+function helloworld(){
+    var  hell0 ="helloworld";
+    console.log[hello];
+}
+helloworld();
