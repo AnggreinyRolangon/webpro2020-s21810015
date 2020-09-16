@@ -1,5 +1,5 @@
 let account = {
-    name: "Putu",
+    name: "Anggreiny",
     expenses: [],
     addExpenses: function(description, amount){
         this.expenses.push({"description": description, "amount": amount});
