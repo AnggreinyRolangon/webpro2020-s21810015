@@ -12,6 +12,6 @@ let account = {
       return `${sum}`;
     }
 };
-account.addExpenses('Beli Makanan', 15000);
-account.addExpenses('Ongkos', 30000);
+account.addExpenses('Beli Minumam', 15000);
+account.addExpenses('Ongkos', 10000);
 console.log(`Total pengeluaran ${account.name} adalah Rp. ${account.getAccountSummary()}`);
