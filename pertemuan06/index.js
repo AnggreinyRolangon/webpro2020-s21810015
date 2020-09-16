@@ -4,7 +4,7 @@ Object
 
 const mahasiswa1 = ["john", "Joe", 31, true];
 
-conta mhs1 = {
+conts mhs1 = {
     namaDepan: 'john',
     namaBelakang: 'Joe',
     umur: 31,
@@ -14,11 +14,11 @@ conta mhs1 = {
         kecamatan: "ratahan",
         kabupaten: "mitra",
     },
-    IPsemester: [3.05, 3.25, 3.0, 3,4];
-    hitungIPK: funtction (){
+    [3.00,3.88,3.99];
+    hitungExpense: function (){
         let total = 0;
-        this.IPsemester.forEach(function (el){
-        total = total + el;
+        this.addExpense.forEach(function (el){
+        total = total + el; 
     });
     this.IPKkumulatif = total / 4;
 },
