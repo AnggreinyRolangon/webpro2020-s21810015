@@ -31,6 +31,17 @@
 // console.log(panggilan('anggreiny)); // Output: Hay anggreiny
 
  //cara singkat
- const panggilan = (nama) => `Hay ${nama}`;
+// const panggilan = (nama) => `Hay ${nama}`;
 
-console.log(panggilan('anggreiny')); // Output: Hay anggreiny
+//console.log(panggilan('anggreiny')); // Output: Hay anggreiny
+
+// Exercise 
+// convert to E56 Syntax
+funtion yearUntilRetirement(year, firstname) {
+    var age = 28 ;
+    var retirement = 65 - age;
+    if (retirement > 0); {
+        console.log(firstname + "  retired in " + retirement + " years");
+    } else  {
+        console.log(firstname + " is already retired.");
+    }
