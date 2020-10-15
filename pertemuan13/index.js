@@ -1,58 +1,64 @@
-//let animal = [ "dog", "rabbit", "bee"];
+//Rest and Spread Operator
 
-//let animal1 = animal[0];
-//let animal2 = animal[1];
-//let animal3 = animal[2];
-
-//let animal = [ "dog", "rabbit", "bee"];
-
-//Destrukturasi Objek
-//let [animal1, animal2, animal3] = animal;
-//console.log(animal1);
-//console.log(animal2);
-//console.log(animal3);
-
-//let [nama, ,alamat, ,pemdidikan] = ["Angge", "K", "Ratahan", "pendidikan", "Kuliah"];
-//let [nama, umur, alamat, pendidikan] = ["Angge", "20", "Ratahan", "Kuliah"];
-//let a = 20;
-//let b = 21;
-
-//let temp = a;
-//a = b;
-//b = temp;
-//console.log(nama);
-//console.log(umur);
-//console.log(alamat);
-//console.log(pendidikan);
-
-//let people ={
-  //  nama: "Angge",
-   // umur: 20,
-   // MasihBerkuliah: true,
+//Rest Operator
+// const hitung = (a,b,c,d,e,) => {
+//    const angka = [a, b, c, d, e];
+//    let total =0;
+//   for(let i=0;i<5;i++){
+//       total = total+angka[i]
+//   }
+// return total;
 // };
+// console.log(hitung(1, 2, 3, 4, 5));
 
-//let nama = people.nama;
-//let umur = people.umur;
-//let MasihBerkuliah = people.MasihBerkuliah
+// const hitung = (param1, param2, ...params) => {
+//    console.log(param1);
+//    console.log(param2);
+//    console.log(params);
+   
+//     let total =0;
+//       params.forEach ((el) => {
+//         total = total+el;
+//     });
+//     return total;
+// };
+// console.log(hitung(1,2,3,4,5,6));
 
-//Destrukturasi Objek
-//let {nama, umur, MasihBerkuliah} = people;
 
-//console.log(nama);
-//console.log(umur);
-//console.log(MasihBerkuliah);
+//Duplikat Array
 
-let karyawan ={
-    umur : "25",
-    nama: ["Queenly", "Shanty", "Revan"],
-    bonus: {
-        penjualan: "tingkat 1",
-        pendapatan: "tingkat 2",
-    }
+// const angka = [1,2,3,4,5];
+// const angka2 = [...angka];
+
+// angka[0]=10;
+
+// console.log(angka);
+// console.log(angka2);
+
+// console.log(angka);
+// console.log(...angka);
+
+//Menggabungkan Array
+// const angka1 = [1,2,3,4,5];
+// const angka2 = [6,7,8,9,10];
+// const angka3 = [12,13];
+
+// const gabung5 = angka1.concat(angka2,angka3);
+// console.log(gabung5);
+
+// const gabung6 = [...angka1, ... angka2,11, ... angka3];
+// console.log (gabung6);
+
+let orang = {
+    nama : "angge",
+    umur : 20,
 };
 
-let {
-    bonus: {penjualan}
-} = karyawan;
-console.log(penjualan);
+orang = {...orang,pekerjaan:"Guru",pendidikan:"S2"};
+console.log(orang);
 
+const obj1 = {a:1, b:2};
+const obj2 = {a:3, b:4};
+
+const objGabung = {...obj1, ...obj2};
+console.log(objGabung);
