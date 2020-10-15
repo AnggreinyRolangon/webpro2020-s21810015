@@ -55,3 +55,4 @@ let {
     bonus: {penjualan}
 } = karyawan;
 console.log(penjualan);
+
