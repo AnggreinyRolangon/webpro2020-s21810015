@@ -1,100 +1,66 @@
-/* 
-    Destrukturisasi
-    */
+//Destructing
+//-------------
 
+// Memecah item atau property pada array atau object ke dalam variabel yang berbeda 
+//1. Array 
 
-//destrukturisasi Array
-// let hewan = ["kucing", "macan", "ular"];
+//const colors = ["merah", "kuning", "hijau"];
 
-// let hewan1 = hewan[0];
-// let hewan2 = hewan[1];
-// let hewan3 = hewan[2];
+//let satu = colors[0];
+//let dua = colors[1];
+//let tiga = colors[2];
 
-// console.log(hewan1); 
-// console.log(hewan2); 
-// console.log(hewan3); 
+//console.log(satu, dua, tiga);
+ 
+//let[satu, dua, tiga, empat ="biru"] = colors;
+//console.log(satu, dua, tida, empat);
 
+//2. Object 
 
-//ES6
-// let hewan =["macan", "kucing", "ular"];
-// //gunakan destrukturisasi array
-// let [hewan1, hewan2, hewan3] = hewan;
-// console.log(hewan1); 
-// console.log(hewan2); 
-// console.log(hewan3); 
+//const user = {
+//    name: "John",
+//    gender: "male",
+//    age: 33,
+//};
+//let {name, gander, age} = user;
 
-//memilih element mana yang tidak akan di simpan
-// menggunakan "koma kosong" untuk melewati
-// let [namaDepan, , namaBelakang, ,alamat] =['jhon','mike','smith','28 tahun','manado'];
-// console.log(namaDepan);
-// console.log(namaBelakang);
-// console.log(alamat);
+//console.log(name,gander,age);
 
-//menukar nilai 2 variable atua lebih
-// let a =20;
-// let b = 30;
-// [a,b]=[a,b];
+//let {name, gander, age, born= "Manado"} = user;
 
+//console {name,age}= user;
+//console.log(name;)
 
-//Destrukturisasi Objek
-//ES5
-// let orang = {
-//     nama: "Jhon",
-//     umur: 20,
-//     sudahMenikah: false
-//   };
-  
-//   let nama = orang.nama;
-//   let umur = orang.umur;
-//   let sudahMenikah = orang.sudahMenikah;
-  
-//   console.log(nama);
-//   console.log(umur);
-//   console.log(sudahMenikah);
+//let {name; nama, age;umur} = user;
+//console.log(nama,umur);
 
-//ES6
-// let biodata = {
-//     nama: "smith",
-//     umur: 22,
-//     sudahMenikah: false
-//   };
-  
-//   // Destrukturisasi Objek
-//   let { nama, umur, statusMenikah } = biodatah;
-  
-//   console.log(nama); 
-//   console.log(umur);
-//   console.log(statusMenikah);
+//const display = ({name, age}) => {
+//    console.log('Nama saya adalag ${name}. Umuer saya adalah ${age}');
+//};
 
+//3. Array Object 
 
-//   let {
-//     namaProperti1: namaVariabelBaru1,
-//     namaProperti2: namaVariabelBaru2
-//   } = namaObjek;
-//   let orang = {
-//     name: "smith",
-//     age: 22,
-//   };
-  
-//   // buat variabel nama berisi nilai dari properti name pada orang
-//   // buat variabel age berisi nilai dari properti umur pada orang
-//   let { name: nama, age: umur } = orang;
-  
-//   console.log(nama); 
-//   console.log(umur); 
-  
-//Destrukturisasi objek bertingkat
-let murid = {
-    kelas: "11",
-    nama: ["jhon", "smith", "james"],
-    prestasi: {
-      olahraga: "juara 1",
-      akademik: "juara 2"
-    }
-  };
-  
-  let {
-    prestasi: { olahraga }
-  } = murid;
-  
-  console.log(olahraga);
+//consr users = [
+
+//    { id: 1, name: "John"},
+//    { id: 2, name: "Jane"},
+//    { id: 3, name: "Bob"},
+//];
+
+//let [user1,user2,user3] = users;
+//console.log(user1,user2,user3);
+//let [
+//    [{id: idUser1, name: nameUser1}],
+//    [{id: idUser2, name: nameUser2}],
+//     [{id: idUser3, name: nameUser3}],
+// ] = users;
+//consoe.log(idUser1, nameUser1);
+
+//4. Kombinasi dengan Rest Operator
+
+const colors = ["merah", "kuning", "hijau", "biru"];
+
+let[satu, ...lainnya] = colors;
+
+console.log(satu);
+console.log(lainnya);
