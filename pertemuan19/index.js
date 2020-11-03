@@ -1,5 +1,3 @@
-// console.log("JavaScript Class & OOP");
-
 // Class & Constructor
 
 // const person = {
@@ -31,7 +29,7 @@
 // Inheritance
 
 // class student extends Person {
-//     constructor(firstName, lastName, NIM, age){
+//     constructor(firstName, lastName, NIM); {
 //         super(firstName, lastName);
 //         this.NIM = NIM;
 //         this.age = age;

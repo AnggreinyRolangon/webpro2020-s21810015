@@ -58,9 +58,9 @@
 
 //4. Kombinasi dengan Rest Operator
 
-const colors = ["merah", "kuning", "hijau", "biru"];
+// const colors = ["merah", "kuning", "hijau", "biru"];
 
-let[satu, ...lainnya] = colors;
+// let[satu, ...lainnya] = colors;
 
-console.log(satu);
-console.log(lainnya);
+// console.log(satu);
+// console.log(lainnya);
