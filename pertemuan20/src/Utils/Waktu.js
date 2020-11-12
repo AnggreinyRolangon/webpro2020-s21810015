@@ -1,6 +1,6 @@
 export const Year = () =>{
-    return new Date().getFullYear()
+    return new Year().getFullYear()
   };
 export const Day = () =>{
-    return new Date().getDate()
+    return new Day().getFullDay()
   };

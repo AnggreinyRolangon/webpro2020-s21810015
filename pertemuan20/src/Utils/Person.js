@@ -1,4 +1,4 @@
-export const person = [
+export const Person = [
     {
         name: "Anj",
         institution: "Unklab",

@@ -1,4 +1,4 @@
-import {Year, Day} from '../Utils/Waktu.js';
+import {Year, Day,} from '../Utils/Waktu.js';
 
 const Hello = () =>{
     return(
