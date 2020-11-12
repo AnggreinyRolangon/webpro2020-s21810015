@@ -1,6 +1,6 @@
 .header-container {
   margin: 15px;
-  background-color: yellow;
+  background-color: rgb(65, 65, 63);
   border-width: 2px;
   border-color: black;
   border-style: solid;
@@ -13,5 +13,5 @@
   border-color: black;
   border-style: solid;
   font-weight: bold;
-  background-color: rgb(226, 124, 212);
+  background-color: rgb(66, 64, 66);
 }
