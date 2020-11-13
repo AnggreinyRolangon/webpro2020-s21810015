@@ -27,21 +27,21 @@ return (
 const App = () => {
 const human = [
 {
-name: 'Kuririn',
+name: 'Anj',
 thumbnail:
-        'https://upload.wikimedia.org/wikipedia/pt/6/63/Kuririn_42311.png',
+        'https://www.facebook.com/photo?fbid=3641933419163435&set=pcb.3641933459163431',
 power: 10
 },
 {
-name: 'Bulma',
+name: 'Elis',
 thumbnail: 
-        'https://upload.wikimedia.org/wikipedia/hu/1/1c/Bulma.png',
+        'https://www.facebook.com/photo?fbid=117656656738503&set=a.117656673405168',
 power: 3
 },
 {
-name: 'Chi-chi',
+name: 'Valent',
 thumbnail:
-        'https://upload.wikimedia.org/wikipedia/hu/8/84/Chi-chi_dragon_ball_anime.ppg',
+        'https://www.facebook.com/photo?fbid=1517340805008739&set=a.103905693018931',
 
 power: 30
 }
