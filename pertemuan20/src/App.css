@@ -1,17 +1,31 @@
-.header-container {
-  margin: 15px;
-  background-color: rgb(65, 65, 63);
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
-}
-.card-container {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border-width: 3px;
-  border-color: black;
-  border-style: solid;
-  font-weight: bold;
-  background-color: rgb(66, 64, 66);
-}
+body {
+  background: #c0ffee;
+  }
+  .App {
+  margin: 1em;
+  font-family: "Avenir", "Arial", sans-serif;
+  }
+  .list {
+  list-style: none;
+  }
+  .list-item {
+  padding: 1em;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 0.25em solid #cacaca;
+  margin-bottom: 1em;
+  }
+  .list-item-image-container {
+  flex: 1;
+  }
+  .list-item-image-container > img {
+  height: 4em;
+  }
+  .list-item-name {
+  flex: 3;
+  }
+  .list-item-power {
+  font-weight: bolder;
+  color: #ff0000;
+  }
